@@ -1,0 +1,66 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+kpass                                                                             0x01B8       2
+MemAddress                                                                        0x01BA       2
+temp                                                                              0x01BC      16
+tempStr                                                                           0x01CC      16
+mStr                                                                              0x01DC      16
+sys_code                                                                          0x01EC       5
+usr_code                                                                          0x01F1       5
+usr_code_idx                                                                      0x01F6       1
+setPass                                                                           0x01F7       5
+MM                                                                                0x01FC      51
+SM                                                                                0x022F     153
+d                                                                                 0x02C8       4
+t                                                                                 0x02CC       3
+_base_y                                                                           0x02CF       4
+_lcd_x                                                                            0x02D3       1
+_lcd_y                                                                            0x02D4       1
+_lcd_maxx                                                                         0x02D5       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+i                                                                                 R4,R5        2
+j                                                                                 R6,R7        2
+zone                                                                              R8,R9        2
+mmz                                                                               R10,R11      2
+smz                                                                               R12,R13      2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+micro_init                                                                        0x0013A     56
+EEPROM_WritePage                                                                  0x00172     31
+EEPROM_ReadPage                                                                   0x00191     49
+GetKey                                                                            0x001C2    117
+showDateTime                                                                      0x00237    109
+makeScreen                                                                        0x002A4     47
+menu1                                                                             0x002D3    139
+ext_int0_isr                                                                      0x0035E     44
+main                                                                              0x0038A    112
+KeyAction                                                                         0x003FA    275
+_lcd_write_nibble_G100                                                            0x0050D     20
+_lcd_write_data                                                                   0x00521     12
+lcd_gotoxy                                                                        0x0052D     17
+lcd_clear                                                                         0x0053E     14
+lcd_putchar                                                                       0x0054C     32
+lcd_puts                                                                          0x0056C     15
+lcd_putsf                                                                         0x0057B     15
+lcd_init                                                                          0x0058A     46
+put_buff_G101                                                                     0x005B8     64
+_print_G101                                                                       0x005F8    308
+sprintf                                                                           0x0072C     52
+strcmp                                                                            0x00760     20
+strcpy                                                                            0x00774     13
+strcpyf                                                                           0x00781     13
+strlen                                                                            0x0078E     12
+strlenf                                                                           0x0079A     13
+rtc_get_time                                                                      0x007A7     23
+rtc_get_date                                                                      0x007BE     25
+bcd2bin                                                                           0x007D7     13
